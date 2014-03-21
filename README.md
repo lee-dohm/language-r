@@ -1,3 +1,3 @@
-# language-r package
+# R Language
 
-A short description of your package.
+A language package for [R](http://www.r-project.org).

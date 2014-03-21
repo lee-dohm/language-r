@@ -1,8 +1,8 @@
 {
   "name": "language-r",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "repository": "https://github.com/atom/language-r",
+  "description": "A language description and snippets for R",
+  "repository": "https://github.com/lee-dohm/language-r",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
