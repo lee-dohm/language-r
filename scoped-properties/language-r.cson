@@ -1,0 +1,6 @@
+'.source.r':
+  'editor':
+    'foldEndPattern': '(^\\s*\\)|^\\s*\\})'
+'.text.tex.latex.rd':
+  'editor':
+    'foldEndPattern': '^\\s*\\}'

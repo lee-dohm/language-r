@@ -1,0 +1,58 @@
+'.source.r, .source.rd.console':
+  'Add Tick Marks':
+    'prefix': 'rug'
+    'body': 'rug(${1:jitter(${2:x})})'
+  'Attach':
+    'prefix': 'att'
+    'body': 'attach(${1:frame})'
+  'Cummulative':
+    'prefix': 'cum'
+    'body': 'cum${1:max}(${2:x})'
+  'Density':
+    'prefix': 'den'
+    'body': 'density(${1:x}${2:, bw = ${3:bandwidth}})'
+  'Detach':
+    'prefix': 'det'
+    'body': 'detach(${0:})'
+  'Divide Into Intervals':
+    'prefix': 'cut'
+    'body': 'cut(${1:x}, breaks = c(${2:${3:}, ${4:max(${1:x})}}))'
+  'Factor':
+    'prefix': 'fac'
+    'body': 'factor(${1:x})'
+  'For Loop':
+    'prefix': 'for'
+    'body': 'for (${1:i} in ${2:seq}) ${3:{$0\\}}'
+  'Function':
+    'prefix': 'fun'
+    'body': 'function(${1:x}) ${3:{$0\\}}'
+  'Ifelse':
+    'prefix': 'ife'
+    'body': 'ifelse(${1:test}, ${2:yes}, ${3:no})'
+  'Length':
+    'prefix': 'len'
+    'body': 'length(${1:x})'
+  'Load Dataset':
+    'prefix': 'dat'
+    'body': 'data(${1:name})'
+  'Polygonal Line':
+    'prefix': 'lin'
+    'body': 'lines(${1:x}${2:, color=${3:red}})'
+  'Read From File':
+    'prefix': 'rea'
+    'body': 'read.table("${1:filename}"${2:, header = ${3:TRUE},  sep = "${4:\\t}",  stringsAsFactors = ${5:FALSE}})'
+  'Sequence (from,to,by)':
+    'prefix': 'seq'
+    'body': 'seq(${1:from}, ${2:to}, ${3:by})'
+  'Sort':
+    'prefix': 'sor'
+    'body': 'sort(${1:x})'
+  'Source':
+    'prefix': 'sou'
+    'body': 'source(${1:"${2:}"}${3:, chdir = ${4:TRUE}})'
+  'file.choose':
+    'prefix': 'fch'
+    'body': '${1:file = }file.choose()${0:}'
+  'na.omit':
+    'prefix': 'nao'
+    'body': 'na.omit(${0:})'
