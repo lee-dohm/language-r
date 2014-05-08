@@ -16,15 +16,6 @@
     'match': '^(#pragma[ \\t]+mark)[ \\t](.*)'
     'name': 'comment.line.pragma-mark.r'
   }
-  # {
-  #   'begin': '(^[ \\t]+)?(?=#)'
-  #   'beginCaptures':
-  #     '1':
-  #       'name': 'punctuation.whitespace.comment.leading.r'
-  #   'end': '(?!\\G)'
-  #   'patterns': [
-  #   ]
-  # }
   {
     'begin': '#'
     'beginCaptures':
