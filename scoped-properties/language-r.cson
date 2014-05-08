@@ -1,5 +1,6 @@
 '.source.r':
   'editor':
+    'commentStart': '# '
     'foldEndPattern': '(^\\s*\\)|^\\s*\\})'
 '.text.tex.latex.rd':
   'editor':
