@@ -1,6 +1,6 @@
 {
   "name": "language-r",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A language description and snippets for R",
   "repository": "https://github.com/lee-dohm/language-r",
   "license": "MIT",
