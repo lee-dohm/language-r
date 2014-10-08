@@ -2,6 +2,8 @@
 
 A language package for [R](http://www.r-project.org).
 
+Originally imported from [r.tmbundle](https://github.com/textmate/r.tmbundle).
+
 ## Installation
 
 You can install packages by either:
@@ -18,5 +20,3 @@ You can install packages by either:
 ## Copyright
 
 Copyright &copy; 2014 by [Lee Dohm](https://www.lee-dohm.com). See [LICENSE](https://github.com/lee-dohm/language-r/blob/master/LICENSE.md) for details.
-
-Originally imported from [r.tmbundle](https://github.com/textmate/r.tmbundle).
