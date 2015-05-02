@@ -1,6 +1,6 @@
 {
   "name": "language-r",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Lee Dohm <lee@lee-dohm.com>",
   "description": "A language description and snippets for R",
   "keywords": [
