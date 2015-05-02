@@ -1,11 +1,15 @@
 {
   "name": "language-r",
   "version": "0.1.1",
+  "author": "Lee Dohm <lee@lee-dohm.com>",
   "description": "A language description and snippets for R",
+  "keywords": [
+    "grammar",
+    "r"
+  ],
   "repository": "https://github.com/lee-dohm/language-r",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
-  },
-  "dependencies": {}
+    "atom": ">=0.174.0 <2.0.0"
+  }
 }

@@ -1,7 +1,8 @@
 # CHANGELOG
 
-## **master** &mdash; *Unreleased*
+## **v0.2.0** &mdash; *Released: 1 May 2015*
 
+* Update for Deprecation Day
 * Add installation instructions in the README
 * Add MIT license
 
