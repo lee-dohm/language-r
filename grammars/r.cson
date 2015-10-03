@@ -6,7 +6,7 @@
   'Rprofile'
   'Rhistory'
 ]
-'name': 'R plus'
+'name': 'R'
 'patterns': [
   {
     'captures':
