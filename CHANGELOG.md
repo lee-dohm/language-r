@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## **v0.3.0** &mdash; *Released: 3 October 2015*
+
+* [PR #6](https://github.com/lee-dohm/language-r/pull/6) from [@tpoisot](https://github.com/tpoisot)
+    * Add support for pipes
+    * Remove annoying variables
+
 ## **v0.2.0** &mdash; *Released: 1 May 2015*
 
 * Update for Deprecation Day
