@@ -4,6 +4,7 @@
   's'
   'S'
   'Rprofile'
+  'Rhistory'
 ]
 'name': 'R'
 'patterns': [
@@ -45,7 +46,7 @@
     'name': 'support.constant.misc.r'
   }
   {
-    'match': '(\\-|\\+|\\*|\\/|%\\/%|%%|%\\*%|%in%|%o%|%x%|\\^)'
+    'match': '(\\-|\\+|\\*|\\/|%\\/%|%%|%\\*%|%in%|%o%|%x%|%>%|\\^)'
     'name': 'keyword.operator.arithmetic.r'
   }
   {
