@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## **v0.4.0** &mdash; *Released: 26 October 2015*
+
+* [PR #7](https://github.com/lee-dohm/language-r/pull/7) from [@tpoisot](https://github.com/tpoisot)
+    * Add support for ROxygen docstrings
+
 ## **v0.3.0** &mdash; *Released: 3 October 2015*
 
 * [PR #6](https://github.com/lee-dohm/language-r/pull/6) from [@tpoisot](https://github.com/tpoisot)
