@@ -18,6 +18,24 @@
     'name': 'comment.line.pragma-mark.r'
   }
   {
+    'begin': '#\'[ ]?(@[a-zA-Z0-9]+)'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.roxygen.r'
+      '1':
+        'name': 'keyword.roxygen.r'
+    'end': '\\n'
+    'name': 'comment.line.number-sign.roxygen.r'
+  }
+  {
+    'begin': '#\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.roxygen.r'
+    'end': '\\n'
+    'name': 'comment.line.number-sign.roxygen.r'
+  }
+  {
     'begin': '#'
     'beginCaptures':
       '0':
