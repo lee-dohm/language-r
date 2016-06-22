@@ -2,15 +2,41 @@
   'Add Tick Marks':
     'prefix': 'rug'
     'body': 'rug(${1:jitter(${2:x})})'
+  'Aggregate':
+    'prefix': 'agg'
+    'body': 'aggregate(${1:x}, ${2:by}, ${3:FUN}, ${4:\...}, ${5:simplify = ${6:TRUE}})'
+    'description': 'Splits the data into subsets, computes summary statistics for each, and returns the result in a convenient form.'
+    'descriptionMoreURL': 'http://stat.ethz.ch/R-manual/R-patched/library/stats/html/aggregate.html'
+  'All equal':
+    'prefix': 'all'
+    'body': 'all.equal(${1:target}, ${2:current}, ${3:\...})'
+  'Aov (ANOVA)':
+    'prefix': 'aov'
+    'body': 'aov(${1:formula}, ${2:data = ${3:NULL}}, ${4:${5:projections = ${6:FALSE}}, ${7:qr = ${8:TRUE}}, ${9:contrasts = ${10:NULL}}, ${11:\...}})'
   'Apply':
     'prefix': 'app'
     'body': 'apply(${1:X}, ${2:MARGIN}, ${3:FUN}, ${4:\...})'
   'Attach':
     'prefix': 'att'
     'body': 'attach(${1:frame})'
+  'Bar plot':
+    'prefix': 'bar'
+    'body': 'barplot(${1:height}, ${2:\...})'
+  'Box plot':
+    'prefix': 'box'
+    'body': 'boxplot(${1:formula}, ${2:data = ${3:NULL}}, ${4:${5:\...}, ${6:subset}, ${7:na.action = ${8:NULL}}})'
+  'Browser (interrupt the execution of an expression and and allow the inspection)':
+    'prefix': 'bro'
+    'body': 'browser()'
+  'By':
+    'prefix': 'by'
+    'body': 'by(${1:data}, ${2:INDICES}, ${3:FUN}, ${4:\...}, ${5:simplify = ${6:TRUE}})'
   'Cat':
     'prefix': 'cat'
-    'body': 'cat(${1:file}, ${2:sep = ${3:""}}, ${4:fill = ${5:FALSE}}, ${6:labels = ${7:NULL}}, ${8:append = ${9:FALSE}})'
+    'body': 'cat(${1:\...},${2:${3:file}, ${4:sep = ${5:""}}, ${6:fill = ${7:FALSE}}, ${8:labels = ${9:NULL}}, ${10:append = ${11:FALSE}}})'
+  'Cbind':
+    'prefix': 'cbind'
+    'body': 'cbind(${1:\...}, ${2:deparse.level = ${3:1}})'
   'Cummulative max':
     'prefix': 'cumi'
     'body': 'cummax(${1:x})'
@@ -19,7 +45,7 @@
     'body': 'cummin(${1:x})'
   'Data Frame':
     'prefix': 'daf'
-    'body': 'data.frame(${1:\...}, ${2:row.names = ${3:NULL}}, ${4:check.rows = ${5:FALSE}}, ${6:check.names = ${7:TRUE}}, ${8:stringsAsFactors = ${9:default.stringsAsFactors()}})'
+    'body': 'data.frame(${1:\...}, ${2:${3:row.names = ${4:NULL}}, ${5:check.rows = ${6:FALSE}}, ${7:check.names = ${8:TRUE}}, ${9:stringsAsFactors = ${10:default.stringsAsFactors()}}})'
   'Density':
     'prefix': 'den'
     'body': 'density(${1:x}${2:, bw = ${3:bandwidth}})'
@@ -29,6 +55,9 @@
   'Divide Into Intervals':
     'prefix': 'cut'
     'body': 'cut(${1:x}, breaks = c(${2:${3:}, ${4:max(${1:x})}}))'
+  'Eval':
+    'prefix': 'eva'
+    'body': 'eval(${1:expr}, ${2:${3:envir = ${4:parent.frame()}}, ${5:enclos = ${6:if(is.list(envir) || is.pairlist(envir)) parent.frame() else baseenv()}}})'
   'Expand grid':
     'prefix': 'exp'
     'body': 'expand.grid(${1:\...}, ${2:KEEP.OUT.ATTRS = ${3:TRUE}}, ${4:stringsAsFactors = ${5:TRUE}})'
@@ -46,19 +75,19 @@
     'body': 'glm(${1:formula}, ${2:family = {3:gaussian}}, ${4:data})'
   'Grep':
     'prefix': 'grep'
-    'body': 'grep(${1:pattern}, ${2:x}, ${3:ignore.case = ${4:FALSE}}, ${5:perl = ${6:FALSE}})'
-  'Grep':
-    'prefix': 'grep'
-    'body': 'grep(${1:pattern}, ${2:x}, ${3:ignore.case = ${4:FALSE}}, ${5:perl = ${6:FALSE}}, ${7:value = ${8:FALSE}}, ${9:fixed = ${10:TRUE}})'
+    'body': 'grep(${1:pattern}, ${2:${3:x}, ${4:ignore.case = ${5:FALSE}}, ${6:perl = ${7:FALSE}}, ${8:value = ${9:FALSE}}, ${10:fixed = ${11:TRUE}}})'
   'Grep logical':
     'prefix': 'grepl'
-    'body': 'grep(${1:pattern}, ${2:x}, ${3:ignore.case = ${4:FALSE}}, ${5:perl = ${6:FALSE}}, ${7:fixed = ${8:TRUE}})'
+    'body': 'grepl(${1:pattern}, ${2:${3:x}, ${4:ignore.case = ${5:FALSE}}, ${6:perl = ${7:FALSE}}, ${9:fixed = ${10:TRUE}}})'
   'Ifelse':
     'prefix': 'ife'
     'body': 'ifelse(${1:test}, ${2:yes}, ${3:no})'
   'Install package':
     'prefix': 'ins'
     'body': 'install.packages(${1:pkgs}, ${2:lib}, ${3:repos = ${4:getOption("repos")}}, ${5:contriburl = ${6:contrib.url(repos, type)}})'
+  'Jpeg':
+    'prefix': 'jpg'
+    'body': 'jpeg(${1:filename = ${2:"Rplot%03d.jpeg"}},${3:width = ${4:480}}, ${5:height = ${6:480}}, ${7:units = ${8:"px"}}, ${9:pointsize = ${10:12}}, ${11:quality = ${13:75}}, ${14:bg = ${15:"white"}}, ${16:res = ${17:NA}}, ${18\...}, ${19:type = c("cairo", "Xlib", "quartz")}, ${20:antialias})'
   'Kmeans':
     'prefix': 'km'
     'body': 'kmeans(${1:x}, ${2:centers}, ${3:iter.max = ${4:10}}, ${5:nstart = ${6:1}}, ${7:algorithm = ${8:c("Hartigan-Wong", "Lloyd", "Forgy","MacQueen")}}, ${9:trace = ${10:FALSE}})'
@@ -95,6 +124,12 @@
   'Names':
     'prefix': 'nam'
     'body': 'names(${1:x})'
+  'Number of cols':
+    'prefix': 'nco'
+    'body': 'ncol(${1:x)'
+  'Number of rows':
+    'prefix': 'nro'
+    'body': 'nrow(${1:x)'
   'Options':
     'prefix': 'opt'
     'body': 'options(${1:\...})'
@@ -111,7 +146,7 @@
     'prefix': 'pas0'
     'body': 'paste(${1:\...}, ${2:collapse = ${3:NULL}})'
   'Plot':
-    'prefix': 'print'
+    'prefix': 'plo'
     'body': 'plot(${1:x}, ${2:y}, ${3:\...})'
   'Points':
     'prefix': 'poi'
@@ -125,12 +160,24 @@
   'Quantile':
     'prefix': 'qua'
     'body': 'quantile(${1:x}, ${2:probs = ${3:seq(0, 1, 0.25)}}, ${4:na.rm = ${5:FALSE}}, ${6:names = ${7:TRUE}}, ${8:type = ${9:7}}, ${10:\...})'
+  'Quote':
+    'prefix': 'quo'
+    'body': 'quote(${1:expr})'
+  'Rbind':
+    'prefix': 'rbind'
+    'body': 'rbind(${1:\...}, ${2:deparse.level = ${3:1}})'
   'Read From csv':
     'prefix': 'reac'
     'body': 'read.csv("${1:filename}"${2:, header = ${3:TRUE},  sep = "${4:\\,}",  stringsAsFactors = ${5:FALSE}})'
-  'Read From File':
+  'Read From Text File':
     'prefix': 'reat'
     'body': 'read.table("${1:filename}"${2:, header = ${3:TRUE},  sep = "${4:\\t}",  stringsAsFactors = ${5:FALSE}})'
+  'Read From RDS':
+    'prefix': 'rear'
+    'body': 'readRDS(${1:file}, ${2:refhook = ${3:NULL}})'
+  'Require':
+    'prefix': 'req'
+    'body': 'require(${1:package}, ${2:lib.loc = ${3:NULL}}, ${4:quietly = ${5:FALSE}})'
   'Rep':
     'prefix': 'rep'
     'body': 'rep(${1:x}, ${2:\...})'
@@ -149,6 +196,21 @@
   'Standard deviation':
     'prefix': 'sd'
     'body': 'sd(${1:x}${2:, na.rm=${3:FALSE}})'
+  'String split':
+    'prefix': 'strs'
+    'body': 'strsplit(${1:x},${2:split}, ${3:${4:fixed = FALSE}, ${5:perl = FALSE}, ${6:useBytes = FALSE}}))'
+  'Student T test':
+    'prefix': 'tts'
+    'body': 't.test(${1:x}, ${2:\...})'
+  'Subset':
+    'prefix': 'sub'
+    'body': 'subset(${1:x}, ${2:subset}, ${3:\...})'
+  'Substitute':
+    'prefix': 'sus'
+    'body': 'substitute(${1:expr}, ${2:env})'
+  'System time for an expression':
+    'prefix': 'sys'
+    'body': 'system.time(${1:expr}, ${2:gcFirst = ${3:TRUE}})'
   'Table':
     'prefix': 'tab'
     'body': 'table(${1:\...})'
@@ -161,9 +223,12 @@
   'Which':
     'prefix': 'whi'
     'body': 'which(${1:x}, ${2:arr.ind = ${3:FALSE}}, ${4:useNames = ${5:TRUE}})'
+  'With':
+    'prefix': 'wit'
+    'body': 'with(${1:data},${2:expr},${3:\...})'
   'Write csv':
     'prefix': 'wric'
-    'body': 'write.csv(${1:x}, ${2:file = ${3:""}}, ${4:append = ${5:FALSE}}, ${6:quote = ${7:TRUE}}, ${8:sep = ${9:" "}}'
+    'body': 'write.csv(${1:x}, ${2:file = ${3:""}}, ${4:append = ${5:FALSE}}, ${6:quote = ${7:TRUE}}, ${8:sep = ${9:" "}})'
   'File.choose':
     'prefix': 'fch'
     'body': '${1:file = }file.choose()${0:}'
