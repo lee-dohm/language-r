@@ -7,6 +7,10 @@
   'Rhistory'
 ]
 'name': 'R'
+'firstLineMatch': '''(?x)
+  ^\\#!.*(?:\\s|\\/)Rscript
+  (?:$|\\s)
+'''
 'patterns': [
   {
     'captures':
