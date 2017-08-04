@@ -56,7 +56,7 @@
     'name': 'keyword.control.import.r'
   }
   {
-    'match':'([[:alpha:].][[:alnum:]._]*)\\[\['
+    'match':'([[:alpha:].][[:alnum:]._]*)\\[\\['
     'name':'entity.name.extractOrReplaceList.r'
   }
   {
