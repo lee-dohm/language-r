@@ -56,6 +56,14 @@
     'name': 'keyword.control.import.r'
   }
   {
+    'match':'([[:alpha:].][[:alnum:]._]*)\\[\\['
+    'name':'entity.name.extractOrReplaceList.r'
+  }
+  {
+    'match':'([[:alpha:].][[:alnum:]._]*)\\['
+    'name':'entity.name.extractOrReplace.r'
+  }
+  {
     'captures':
       '1':
         'name': 'entity.name.function.r'
@@ -78,12 +86,16 @@
     'name': 'keyword.operator.arithmetic.r'
   }
   {
-    'match': '(=|<-|<<-|->|->>)'
+    'match': '(<-|<<-|->|->>)'
     'name': 'keyword.operator.assignment.r'
   }
   {
-    'match': '(==|!=|<>|<|>|<=|>=)'
+    'match': '(==|!=|<>|<=|>=|<|>)'
     'name': 'keyword.operator.comparison.r'
+  }
+  {
+    'match': '(=)'
+    'name': 'keyword.operator.assignment.r'
   }
   {
     'match': '(!|&{1,2}|[|]{1,2})'
@@ -184,3 +196,4 @@
   }
 ]
 'scopeName': 'source.r'
+
